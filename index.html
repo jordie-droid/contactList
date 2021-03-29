@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css">
+    <title>Exercice sur Dom</title>
+</head>
+<body>
+    <div class="customize-alert">
+        <i class="close-alert fa fa-times fa-2x"></i>
+        <div class="flex-alert">
+            <i class="fa fa-warning fa-5x"></i>
+            <p class="alert-message"></p>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main-title">
+            <h1>Répertoire de contactes</h1>
+            <div class="search-bar-container">
+                <div class="ui input">
+                    <input id="search-bar" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="form-container">
+                <div class="sub-title">
+                    <h2>Formulaire de contacts</h2>
+                </div>
+                <form class="ui form" action="">
+                    <div class="field">
+                        <label for="prename">Prénom</label>
+                        <input  id="prename" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="name">Nom</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="group">Groupe</label>
+                        <select class="ui dropdown" id="group">
+                            <option value=""></option>
+                            <option value="Dev-web-a">Dev-web-a</option>
+                            <option value="Dev-web-b">Dev-web-b</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="bio">Bio</label>
+                        <textArea id="bio" rows="4"></textArea>
+                    </div>
+                    <input id="import-image" type="file"><br>
+                    <label class="ui button" id="btn-import-photo" for="import-image">Choisir la photo</label>
+                    <img class="ui small image" src="avatar1.png" id="monImage" alt="">
+                    <div class="two fields">
+                        <div id="btns-flex" class="field">
+                            <input class="ui primary button" id="creer" type="submit" value="Créer">
+                            <input class="negative ui button" id="reset" type="reset" value="Rénit.">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-list-container">
+                <div class="sub-title">
+                    <h2>Liste de contacts</h2>
+                </div>
+                <div id="contact-list-content">
+
+                </div>            
+            </div>
+        </div>
+    </div>
+    <script src="index.js">       
+    </script>
+</body>
+</html>

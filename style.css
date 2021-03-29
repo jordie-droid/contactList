@@ -1,0 +1,210 @@
+        @font-face{
+            font-family: 'roboto';
+            src: url("../fonts/Roboto-Regular.ttf");
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'roboto';
+        }
+
+        .main-container{
+            width: 70vw;
+            margin: auto;
+            background-color: #f1f1f1;
+            box-shadow: 0 0 4px #729fe4;
+        }
+
+        .main-title{
+            background-color: #729fe4;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+        }
+
+        .main-content{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .main-content .form-container{
+            width: 50%;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        .sub-title{
+            background-color: #729fe4;
+            color: #fff;
+            padding: 15px;
+        }
+
+        form{
+            padding: 10px;
+            color: #4c90f7;
+        }
+
+        form #monImage{
+            position: relative;
+            bottom: 46px;
+            left: 300px;
+        }
+
+        .main-content .contact-list-container{
+            width: 50%;
+            height: 380px;
+            margin-top: 10px;
+        }
+
+        .border-blue{
+            position: relative;
+            width: 100%;
+            word-break: break-all;
+            font-weight: bold;
+            color: #797979;
+        }
+
+        .border-black{
+            margin: 0 10px;
+        }
+
+        .border-blue :nth-child(3){
+            margin-top: 5px;
+        }
+
+        .border-blue :nth-child(4){
+            margin-top: 5px;
+        }
+
+        .carte-contact-content-all{
+            display: flex;
+            flex-direction: row;
+            border-bottom: solid 1px #72a0e498;
+            box-shadow: 0px 0px 3px #72a0e498;
+            padding:5px;
+        }
+
+        .btn-close{
+            color: #ff0000;
+            position: absolute;
+            left: 90%;
+        }
+
+        .bio{
+            word-break: break-word;
+        }
+        
+        .image-card-viewer{
+            width: 100px;
+            height: auto;
+            border-radius: 100%;
+        }
+        
+        .names-groupes-view{
+            font-weight: bold;
+        }
+
+        #import-image{
+            display: none;
+        }
+
+        #btn-import-photo{
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 4px #000000;
+        }
+
+        #contact-list-content{
+            overflow-y: auto;
+            height: 620px;
+        }
+
+        #group{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-apparence:none;
+            background: url("drop-down-arrow.svg") no-repeat;
+            background-color: #fff;
+            background-position: 98%;
+            background-size: 20px;
+        }
+
+        #group:focus{
+            outline: none;
+        }
+
+        #creer{
+            width: 200px;
+        }
+
+        #reset{
+            width: 200px;
+        }
+
+        #btns-flex{
+            display: flex;
+            margin-top: -20px;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .customize-alert{
+            position: fixed;
+            left: 50vw;
+            top: 50vh;
+            transform: translate(-50%,-50%);
+            width: 510px;
+            padding: 10px;
+            background-color: #d8d8d8b4;
+            box-shadow: 0px 0px 10px #616161;
+            border-radius: 10px;
+            border: solid 1px #729fe4;
+            z-index: 9999;
+            color: #000;
+            font-size: 16px;
+            display: none;
+        }
+
+        .close-alert{
+            color: black;
+            margin-left: 90%;
+            cursor: pointer;
+        }
+
+        .close-alert:hover{
+            color: red;
+        }
+
+        .fa.fa-warning.fa-5x{
+            color: rgb(255, 38, 0);
+            margin-right: 5px;
+        }
+
+        .flex-alert{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px;
+        }
+
+        #search-bar{
+            margin-left: 143px;
+            width: 50px;
+            background-color: transparent;
+            border: none;
+            border-bottom: solid 1px #fff;
+            color: #fff;
+            transition: .3s linear;
+            /* add backgroud-image search */
+        }
+
+        #search-bar:focus{
+            margin-left: 143px;
+            width: 450px;
+            background-color: transparent;
+            border: none;
+            border-bottom: solid 1px #fff;
+            color: #fff;
+            /* add backgroud-image search */
+        }
+
